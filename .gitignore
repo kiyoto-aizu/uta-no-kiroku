@@ -2,6 +2,18 @@
 
 # dependencies
 node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Local pipeline input and output
+data/raw/*
+data/processed/*
+data/review/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/review/.gitkeep
 
 # Expo
 .expo/

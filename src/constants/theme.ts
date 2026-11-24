@@ -24,7 +24,26 @@ export const Colors = {
   },
 } as const;
 
+export const SearchColors = {
+  background: '#FFF8EF',
+  surface: '#FFFFFF',
+  panel: '#FFF1E4',
+  notice: '#FFF0E2',
+  primary: '#F28C75',
+  accent: '#A8D8C8',
+  monthly: '#D9C8F0',
+  regular: '#DDF1E9',
+  text: '#55463F',
+  buttonText: '#3D302A',
+  clearBackground: '#FBE3DA',
+  clearBorder: '#F2B9A8',
+  clearText: '#8A5547',
+} as const;
+
 export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
+
+export const AppFont = 'ZenMaruGothic';
+export const AppFontIOSMedium = 'ZenMaruGothic-Medium';
 
 export const Fonts = Platform.select({
   ios: {
